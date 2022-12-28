@@ -13,14 +13,14 @@ import springfox.error.response.extension.service.ErrorResponseDescriptionBuilde
 import java.util.HashMap;
 import java.util.Map;
 
-//@Component
-//@Primary
+@Component
+@Primary
 public class CustomErrorResponseDescBuilder implements ErrorResponseDescriptionBuilder {
 
   @Override
   public Map<String, String> buildDescription(ErrorResponse errorResponseAnno) {
-    // http 상태코드 당, description 를 저장할 Map
-    Map<String, String> descriptionMap = new HashMap<>(); //<HTTP상태코드, 설명>
+    // map to save description per http status
+    Map<String, String> descriptionMap = new HashMap<>(); //<HTTP Status, Description>
 
     descriptionMap.put("404", "This is my custom description");
 

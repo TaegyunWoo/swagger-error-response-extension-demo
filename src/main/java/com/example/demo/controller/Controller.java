@@ -1,8 +1,6 @@
 package com.example.demo.controller;
 
 import com.example.demo.code.LoginErrorCode;
-import com.example.demo.code.MyEnum1;
-import com.example.demo.code.MyEnum2;
 import com.example.demo.dto.ErrorResponseDto;
 import com.example.demo.dto.RequestDto;
 import com.example.demo.dto.ResponseDto;
@@ -18,7 +16,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import springfox.error.response.extension.annotation.ErrorResponse;
-import springfox.error.response.extension.service.ErrorResponseExtension;
 
 @RequestMapping("/home")
 @RestController
